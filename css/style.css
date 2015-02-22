@@ -53,3 +53,97 @@ body {
 div {
     border: 1px solid Chocolate;
 }
+/* End of Reset */
+
+/* Start of custom styling */
+
+.content {
+	padding: 0 1rem;
+    margin: 0 auto;
+    min-width: 38rem;
+}
+
+/* Navigation Section */
+
+.top-navigation > .content {
+    height: 4.375rem;
+}
+
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.top-navigation .logo {
+	height: 4.375rem;
+	width: 2rem;
+}
+
+.top-navigation .links {
+	float: right;
+	font-size: 1.04rem;
+	margin-top: 1.7rem;
+}
+
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 1.6rem;
+}
+
+.top-navigation .links li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+/* Introduction Section */
+
+.introduction {
+	background-image: url('../images/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+}
+
+.buttons {
+
+}
+
+/* Cases Section */
+
+.cases {
+
+}
+
+.devices {
+
+}
+
+.caption {
+
+}
+
+/* Footer Section */
+
+.social {
+
+}
+
+.icons {
+
+}
+
+.twitter, .facebook, .instagram {
+
+}
+
+.icon-twitter, .icon-facebook, .icon-instagram {
+
+}
+
+.copy {
+
+}
