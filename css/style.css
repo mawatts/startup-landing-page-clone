@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -49,6 +50,7 @@ table {
 
 body {
     background-color: LightGray;
+    font-family: 'Roboto', sans-serif;
 }
 div {
     border: 1px solid Chocolate;
@@ -78,7 +80,6 @@ div {
 
 .top-navigation .logo {
 	height: 4.375rem;
-	width: 2rem;
 }
 
 .top-navigation .links {
@@ -133,15 +134,31 @@ div {
 /* Cases Section */
 
 .cases {
-
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
 }
 
-.devices {
-
+.cases .content {
+	margin-top: 7rem;
+	text-align: center;
 }
 
-.caption {
+.cases h2 {
+    font-size: 3rem;
+    margin: 2rem 0 3rem;
+    font-weight: 300;
+}
 
+.cases .devices > li {
+	width: 33%;
+	float: left;
+}
+
+.cases .devices h3 {
+    font-size: 2rem;
+    margin: 4rem 0 3rem;
+    font-weight: 400;
 }
 
 /* Footer Section */
@@ -150,15 +167,7 @@ div {
 
 }
 
-.icons {
-
-}
-
-.twitter, .facebook, .instagram {
-
-}
-
-.icon-twitter, .icon-facebook, .icon-instagram {
+.social .icons {
 
 }
 
