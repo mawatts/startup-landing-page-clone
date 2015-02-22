@@ -62,7 +62,7 @@ div {
 /* Start of custom styling */
 
 .content {
-	padding: 0 0.938rem;
+	padding: 0 5rem;
     margin: 0 auto;
     min-width: 37.5rem;
 }
@@ -98,7 +98,7 @@ div {
 
 .top-navigation .links li.active {
     color: #4c5058;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .top-navigation .links li:hover {
@@ -118,9 +118,9 @@ div {
 }
 
 .introduction h1, .introduction h3 {
-	color: white;
+	color: #fff;
 	text-align: center;
-	font-weight: 300;
+	font-weight: 200;
 }
 
 .introduction h1 {
@@ -134,7 +134,7 @@ div {
 }
 
 .introduction .buttons {
-	color: white;
+	color: #fff;
 	text-align: center;
 	margin-top: 2rem;
 }
@@ -172,7 +172,7 @@ div {
 /* Footer Section */
 
 .social {
-    background-color: white;
+    background-color: #fff;
     overflow: auto;
     padding-bottom: 9rem;
     text-align: center;
