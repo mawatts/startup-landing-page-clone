@@ -16,41 +16,43 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 body {
     /* background-color: LightGray; */
     font-family: 'Roboto', sans-serif;
-    display: block;
+    -webkit-font-smoothing: antialiased;
 }
 
 div {
@@ -62,7 +64,7 @@ div {
 /* Start of custom styling */
 
 .content {
-	padding: 0 5rem;
+    padding: 0 0.9375rem;
     margin: 0 auto;
     min-width: 37.5rem;
 }
@@ -71,6 +73,8 @@ div {
 
 .top-navigation > .content {
     height: 4.375rem;
+    width: 60.625rem;
+    margin: 0 auto;
 }
 
 .top-navigation {
@@ -82,23 +86,24 @@ div {
 }
 
 .top-navigation .logo {
-	height: 4.375rem;
+    height: 4.375rem;
 }
 
 .top-navigation .links {
-	float: right;
-	font-size: 1.04rem;
-	margin-top: 1.7rem;
+    float: right;
+    color: #838994;
+    font-size: 1rem;
+    margin-top: 1.5625rem;
 }
 
 .top-navigation .links li {
-	display: inline-block;
-	margin-left: 1.5rem;
+    display: inline-block;
+    margin-left: 1.5625rem;
 }
 
 .top-navigation .links li.active {
     color: #4c5058;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .top-navigation .links li:hover {
@@ -109,34 +114,34 @@ div {
 /* Introduction Section */
 
 .introduction {
-	background-image: url('../images/first-background.jpg');
+    background-image: url('../images/first-background.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45rem;
+    height: 45.938rem;
     overflow: auto;
 }
 
 .introduction h1, .introduction h3 {
-	color: #fff;
-	text-align: center;
-	font-weight: 200;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
 }
 
 .introduction h1 {
-	margin-top: 17rem;
-	font-size: 3rem;
+    margin-top: 17rem;
+    font-size: 3.125rem;
 }
 
 .introduction h3 {
-	margin-top: 1.5rem;
-	font-size: 1.5rem;
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
 }
 
-.introduction .buttons {
-	color: #fff;
-	text-align: center;
-	margin-top: 2rem;
+.introduction .big-button {
+    color: #fff;
+    text-align: center;
+    margin-top: 1.563rem;
 }
 
 /* Cases Section */
@@ -148,24 +153,34 @@ div {
 }
 
 .cases .content {
-	margin-top: 7rem;
-	text-align: center;
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
 }
 
 .cases h2 {
-    font-size: 3rem;
-    margin: 2rem 0 3rem;
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
     font-weight: 300;
 }
 
 .cases .devices > li {
-	width: 33%;
-	float: left;
+    width: 33.3333333%;
+    float: left;
+}
+
+.cases ul.devices {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .cases .devices h3 {
-    font-size: 2rem;
-    margin: 4rem 0 3rem;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
     font-weight: 400;
 }
 
@@ -174,15 +189,23 @@ div {
 .social {
     background-color: #fff;
     overflow: auto;
-    padding-bottom: 9rem;
+    padding-bottom: 9.375rem;
     text-align: center;
 }
 
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+
 .social .icons > li {
-    width: 3.5rem;
-    height: 3rem;
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: inline-block;
-    margin: 1.25rem 5px;
+    margin: 1.25rem 0.3125rem;
+    border: 0.0625rem solid #eaebec;
     padding: 0.625rem 0;
     text-align: center;
 }
@@ -213,7 +236,7 @@ button {
     border-style: none;
     border-radius: 4px;
     padding: 1rem 1.5rem;
-    color: white;
+    color: #fff;
     font-size: 1.125rem;
 }
 button:hover {
